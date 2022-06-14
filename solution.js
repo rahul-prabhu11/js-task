@@ -1,4 +1,7 @@
 function solution(arr) {
+    if (arr == [])
+        return [[]]
+    
     let ids = arr.map(item => item.id); // Extracting IDs into an array
 
     ids = ids.sort((a, b) => { return a - b }) // Sorting the extracted array
