@@ -12,7 +12,7 @@ function solution(arr) {
     } // Finding the count of repeated IDs (excluding first count of unique IDs)
 
     if (repeatCount == 0 || repeatCount >= uniqueArr.length)  // If input array of objects is completely unique or all objects are same
-        return uniqueArr
+        return [uniqueArr]
 
     let result = [];
     for (let i = 0; i < (arr.length + repeatCount - uniqueArr.length); i++) { // Compute number of unique set of arrays needed
